@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Type Deals</title>
+	 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+	<style>
+
+	.text-box {
+		background-color: #ccc;
+		width: 600px;
+		position: relative;
+		height: 600px;
+	}
+
+	.text-box h2 {
+		top:0px;
+		position: absolute;
+		color:#000;
+	}
+
+	</style>
+
+	 <script>
+		$(function() {
+		    $( "#slider" ).slider();
+
+			var selection = $("#slider").slider({
+				change: function( event, ui ) {
+					
+					var size = ui.value;
+
+					$('.text-box h2').css('font-size', size);
+
+
+				}
+			});
+
+			
+
+
+
+		});
+	</script>
+</head>
+<body>
+	
+
+<div id="slider"></div>
+
+<div class="text-box">
+	<h2>Babado and Beans</h2>
+</div>
+
+
+
+
+</body>
+</html>

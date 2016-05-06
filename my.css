@@ -1,0 +1,33 @@
+
+
+body {
+	background-image: url(../images/testimage.jpg);
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+
+input[type=text] {
+	color: #ccc;
+    border: none;
+    border-bottom: 0px solid red;
+    background-color : transparent !important;
+}
+
+p {
+	color: #ccc;
+}
+
+div {
+    padding:20px;
+    background:#eee;
+    font-size:18px;
+}
+
+.well {
+	width: 200px;
+	height: 500px;
+}
+
+input[type=range] {
+    display: block;
+    width: 100px;
